@@ -8,6 +8,11 @@ class Customer{
             result
         );
     }
+
+    static getAll(result){
+        const sql = 'SELECT * FROM customers';
+        db.query(sql, result);
+    }
 }
 
 module.exports = Customer;
